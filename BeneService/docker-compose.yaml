@@ -1,0 +1,52 @@
+version: '3.7'
+
+services:
+
+  Beneficiary-service:
+    image: msu-beneficiary-service:latest
+    mem_limit: 700m
+    ports:
+      - "9093:9093"
+    networks:
+      - Beneficiary-service-network
+    depends_on:
+      - service-registry
+
+    environment:
+      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://service-registry:8761/eureka
+
+  netflix-zuul-api-gateway-server:
+    image: msu-netflix-zuul-api-gateway-server:latest
+    mem_limit: 700m
+    ports:
+      - "8765:8765"
+    networks:
+      - Beneficiary-service-network
+    depends_on:
+      - service-registry
+    environment:
+      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://service-registry:8761/eureka
+      SPRING.ZIPKIN.BASEURL: http://zipkin-server:9411/
+
+  service-registry:
+    image: msu-service-registry:latest
+    mem_limit: 700m
+    ports:
+      - "8761:8761"
+    networks:
+      - Beneficiary-service-network
+
+#docker run -p 9411:9411 openzipkin/zipkin:2.23
+
+  zipkin-server:
+    image: openzipkin/zipkin:2.23
+    mem_limit: 300m
+    ports:
+      - "9411:9411"
+    networks:
+      - Beneficiary-service-network
+
+    restart: always #Restart if there is a problem starting up
+
+networks:
+  Beneficiary-service-network:
