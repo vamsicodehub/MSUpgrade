@@ -76,7 +76,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<image>
-						<name>msupgrade/msu-${project.artifactId}:${project.version}</name>
+						<name>vamsicodehub/msu_beneficiary-service:${project.version}</name>
 					</image>
 					<pullPolicy>IF_NOT_PRESENT</pullPolicy>
 					<excludes>
