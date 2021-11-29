@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<validator name="create">
+		<field name="beneficiaryType" displayKey="BeneficiaryValidator.beneficiaryType">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="beneficiaryCode" displayKey="BeneficiaryValidator.beneficiaryCode">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="beneficiaryName" displayKey="BeneficiaryValidator.beneficiaryName">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="corporateName" displayKey="BeneficiaryValidator.corporateName">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="paymentMethodName" displayKey="BeneficiaryValidator.paymentMethodName">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="beneficiaryId" displayKey="BeneficiaryValidator.beneficiaryId">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="paymentMethodId" displayKey="BeneficiaryValidator.paymentMethodId">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="paymentMethodCode" displayKey="BeneficiaryValidator.paymentMethodCode">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="accountNo" displayKey="BeneficiaryValidator.accountNo">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="beneficiaryBank" displayKey="BeneficiaryValidator.beneficiaryBank">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="address1" displayKey="BeneficiaryValidator.address1">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="routingCode" displayKey="BeneficiaryValidator.routingCode">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="cardPayment" displayKey="BeneficiaryValidator.cardPayment">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="effectiveFrom" displayKey="BeneficiaryValidator.effectiveFrom">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="iBanNo" displayKey="BeneficiaryValidator.iBanNo">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="paymentChannel" displayKey="BeneficiaryValidator.paymentChannel">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+	</validator>
+
+	<validator name="update">
+		<field name="id" displayKey="BeneficiaryValidator.id">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="version" displayKey="BeneficiaryValidator.version">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.NumberValidator" />
+		</field>
+		<field name="lastAction" displayKey="BeneficiaryValidator.lastAction">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="beneficiaryType" displayKey="BeneficiaryValidator.beneficiaryType">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="beneficiaryCode" displayKey="BeneficiaryValidator.beneficiaryCode">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="beneficiaryName" displayKey="BeneficiaryValidator.beneficiaryName">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="corporateName" displayKey="BeneficiaryValidator.corporateName">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="paymentMethodName" displayKey="BeneficiaryValidator.paymentMethodName">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="beneficiaryId" displayKey="BeneficiaryValidator.beneficiaryId">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="paymentMethodId" displayKey="BeneficiaryValidator.paymentMethodId">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="paymentMethodCode" displayKey="BeneficiaryValidator.paymentMethodCode">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="accountNo" displayKey="BeneficiaryValidator.accountNo">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="beneficiaryBank" displayKey="BeneficiaryValidator.beneficiaryBank">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="address1" displayKey="BeneficiaryValidator.address1">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="effectiveFrom" displayKey="BeneficiaryValidator.effectiveFrom">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="routingCode" displayKey="BeneficiaryValidator.routingCode">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="cardPayment" displayKey="BeneficiaryValidator.cardPayment">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="iBanNo" displayKey="BeneficiaryValidator.iBanNo">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+		<field name="paymentChannel" displayKey="BeneficiaryValidator.paymentChannel">
+			<validatorClass
+				name="com.aurionpro.generic.fieldvalidator.MandatoryValidator" />
+		</field>
+	</validator>
+</root>
+	

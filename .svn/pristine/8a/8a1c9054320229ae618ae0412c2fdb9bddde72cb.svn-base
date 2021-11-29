@@ -1,0 +1,15 @@
+server.port=9092
+
+spring.hazelcast.config=classpath:config/hazelcast.xml
+spring.datasource.url=jdbc:oracle:thin:@172.16.1.135:1521:orcl
+spring.datasource.username=COMMONS_TECH_UPGRADE
+spring.datasource.password=COMMONS_TECH_UPGRADE
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.Oracle12cDialect
+spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
+spring.jpa.show-sql=true
+
+spring.application.name= favourite-service
+eureka.client.serviceUrl.defaultZone= http://localhost:8761/eureka/
+instance.hostname= localhost
+
+
