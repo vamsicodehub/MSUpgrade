@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   Bene-service:
-    image: msu-Bene-service:latest
+    image: msu-bene-service:latest
     mem_limit: 700m
     ports:
       - "9093:9093"
