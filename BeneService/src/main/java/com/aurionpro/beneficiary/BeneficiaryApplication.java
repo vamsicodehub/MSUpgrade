@@ -2,15 +2,15 @@ package com.aurionpro.beneficiary;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  *
  * @author Pravin.Devade
  */
 
+@EnableDiscoveryClient
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.aurionpro"})
 public class BeneficiaryApplication {
 
 	public static void main(String[] args) {

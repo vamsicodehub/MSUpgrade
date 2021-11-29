@@ -2,13 +2,13 @@ version: '3.7'
 
 services:
 
-  Beneficiary-service:
-    image: msu-beneficiary-service:latest
+  Bene-service:
+    image: msu-Bene-service:latest
     mem_limit: 700m
     ports:
       - "9093:9093"
     networks:
-      - Beneficiary-service-network
+      - Bene-service-network
     depends_on:
       - service-registry
 
@@ -21,7 +21,7 @@ services:
     ports:
       - "8765:8765"
     networks:
-      - Beneficiary-service-network
+      - Bene-service-network
     depends_on:
       - service-registry
     environment:
@@ -34,7 +34,7 @@ services:
     ports:
       - "8761:8761"
     networks:
-      - Beneficiary-service-network
+      - Bene-service-network
 
 #docker run -p 9411:9411 openzipkin/zipkin:2.23
 
@@ -44,9 +44,9 @@ services:
     ports:
       - "9411:9411"
     networks:
-      - Beneficiary-service-network
+      - Bene-service-network
 
     restart: always #Restart if there is a problem starting up
 
 networks:
-  Beneficiary-service-network:
+  Bene-service-network:
